@@ -8,6 +8,14 @@
         "env": []
     },
     {
+        "id": "f16d55fe65b01e3c",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "cc6699b26f20f865",
         "type": "ui_tab",
         "name": "Tabla de datos",
@@ -156,6 +164,17 @@
         "type": "ui_group",
         "name": "Default",
         "tab": "0a6140e9e32cc022",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "820bd5f18b37a67a",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "cc6699b26f20f865",
         "order": 2,
         "disp": true,
         "width": 6,
@@ -343,5 +362,21 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "9e9b33c2fa50fa89",
+        "type": "ui_table",
+        "z": "279b05b669e6a16c",
+        "group": "820bd5f18b37a67a",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 430,
+        "y": 500,
+        "wires": []
     }
 ]
