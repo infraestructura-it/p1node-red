@@ -2,7 +2,10 @@
     "name": "rack-comunicaciones",
     "description": "rack de comunicaciones",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "node-red-dashboard": "3.6.5",
+        "node-red-node-ui-table": "0.4.4"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flows.json",
