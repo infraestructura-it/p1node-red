@@ -116,7 +116,34 @@
         "id": "790ecc3e29d52472",
         "type": "ui_group",
         "name": "Tabla",
-        "tab": "cc6699b26f20f865",
+        "tab": "0a6140e9e32cc022",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0a6140e9e32cc022",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "12ab9345dad5e834",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a67cbbe24a52e2f4",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "12ab9345dad5e834",
         "order": 1,
         "disp": true,
         "width": 6,
@@ -138,5 +165,127 @@
         "x": 610,
         "y": 200,
         "wires": []
+    },
+    {
+        "id": "f05babc84eb8abc5",
+        "type": "ui_switch",
+        "z": "279b05b669e6a16c",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "790ecc3e29d52472",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 630,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3077574148b379f1",
+        "type": "ui_switch",
+        "z": "279b05b669e6a16c",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "a67cbbe24a52e2f4",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 630,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d5a89a13bc8ec5b0",
+        "type": "inject",
+        "z": "279b05b669e6a16c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 390,
+        "y": 300,
+        "wires": [
+            [
+                "f05babc84eb8abc5"
+            ]
+        ]
+    },
+    {
+        "id": "d0905e78e6d78999",
+        "type": "inject",
+        "z": "279b05b669e6a16c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 410,
+        "y": 360,
+        "wires": [
+            [
+                "3077574148b379f1"
+            ]
+        ]
     }
 ]
